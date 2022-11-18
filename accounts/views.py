@@ -4,8 +4,5 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'accounts/dashboard.html')
 
-def contact(request):
-    return HttpResponse('Contact')
-
-def help(request):
-    return HttpResponse('help')
+def product(request):
+    return render(request, 'accounts/products.html')
